@@ -1,0 +1,768 @@
+[2025-09-02 15:41:49] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SET SESSION sql_mode = 'STRICT_ALL_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'","error":"Variable 'sql_mode' can't be set to the value of 'NO_AUTO_CREATE_USER'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 88
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 29
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 15:41:49] [ERROR] [IP: ::1] [User: 1] Erro de conexão com o banco de dados {"error":"Variable 'sql_mode' can't be set to the value of 'NO_AUTO_CREATE_USER'","trace":"#0 C:\\wamp64\\www\\compras\\src\\includes\\Database.php(78): mysqli->query('SET SESSION sql...')\n#1 C:\\wamp64\\www\\compras\\src\\includes\\Database.php(29): Database->query('SET SESSION sql...')\n#2 C:\\wamp64\\www\\compras\\src\\includes\\Database.php(45): Database->__construct()\n#3 C:\\wamp64\\www\\compras\\src\\includes\\Model.php(9): Database::getInstance()\n#4 C:\\wamp64\\www\\compras\\agua.php(9): Model->__construct()\n#5 {main}"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 35
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 45
+            [function] => __construct
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 15:46:23] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SET SESSION sql_mode = 'STRICT_ALL_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'","error":"Variable 'sql_mode' can't be set to the value of 'NO_AUTO_CREATE_USER'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 31
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 15:46:23] [ERROR] [IP: ::1] [User: 1] Erro de conexão com o banco de dados {"error":"Variable 'sql_mode' can't be set to the value of 'NO_AUTO_CREATE_USER'","trace":"#0 C:\\wamp64\\www\\compras\\src\\includes\\Database.php(79): mysqli->query('SET SESSION sql...')\n#1 C:\\wamp64\\www\\compras\\src\\includes\\Database.php(31): Database->query('SET SESSION sql...')\n#2 C:\\wamp64\\www\\compras\\src\\includes\\Database.php(46): Database->__construct()\n#3 C:\\wamp64\\www\\compras\\src\\includes\\Model.php(9): Database::getInstance()\n#4 C:\\wamp64\\www\\compras\\agua.php(9): Model->__construct()\n#5 {main}"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 35
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 46
+            [function] => __construct
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 15:47:00] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SET time_zone = 'America\/Sao_Paulo'","error":"Unknown or incorrect time zone: 'America\/Sao_Paulo'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 33
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 15:47:00] [ERROR] [IP: ::1] [User: 1] Erro de conexão com o banco de dados {"error":"Unknown or incorrect time zone: 'America\/Sao_Paulo'","trace":"#0 C:\\wamp64\\www\\compras\\src\\includes\\Database.php(79): mysqli->query('SET time_zone =...')\n#1 C:\\wamp64\\www\\compras\\src\\includes\\Database.php(33): Database->query('SET time_zone =...')\n#2 C:\\wamp64\\www\\compras\\src\\includes\\Database.php(46): Database->__construct()\n#3 C:\\wamp64\\www\\compras\\src\\includes\\Model.php(9): Database::getInstance()\n#4 C:\\wamp64\\www\\compras\\agua.php(9): Model->__construct()\n#5 {main}"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 35
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 46
+            [function] => __construct
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 15:49:33] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT * FROM agua ORDER BY id DESC","error":"Unknown column 'id' in 'order clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Model.php
+            [line] => 81
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 15:50:05] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT * FROM agua ORDER BY id DESC","error":"Unknown column 'id' in 'order clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Model.php
+            [line] => 81
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 15:58:04] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total\r\n                FROM agua\r\n                WHERE status = 'pendente'","error":"Unknown column 'valor' in 'field list'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Agua.php
+            [line] => 45
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 16:00:16] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total\r\n                FROM agua\r\n                WHERE status = 'pendente'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Agua.php
+            [line] => 45
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 17:00:14] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total\r\n                FROM agua\r\n                WHERE status = 'pendente'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Agua.php
+            [line] => 45
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 17:03:59] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT AVG(consumo) as media_consumo\r\n                FROM agua\r\n                WHERE data_vencimento >= DATE_SUB(CURRENT_DATE, INTERVAL 6 MONTH)","error":"Unknown column 'consumo' in 'field list'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Agua.php
+            [line] => 36
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 17:06:45] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT AVG(consumo) as media_consumo\r\n                FROM agua\r\n                WHERE data_vencimento >= DATE_SUB(CURRENT_DATE, INTERVAL 6 MONTH)","error":"Unknown column 'data_vencimento' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Agua.php
+            [line] => 36
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 17:20:31] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total\r\n                FROM agua\r\n                WHERE status = 'pendente'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Agua.php
+            [line] => 45
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 17:25:07] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT AVG(consumo) as media_consumo\r\n                FROM agua\r\n                WHERE data_vencimento >= DATE_SUB(CURRENT_DATE, INTERVAL 6 MONTH)","error":"Unknown column 'consumo' in 'field list'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Agua.php
+            [line] => 36
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 17:28:58] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT AVG(consumo) as media_consumo\r\n                FROM agua\r\n                WHERE data_vencimento >= DATE_SUB(CURRENT_DATE, INTERVAL 6 MONTH)","error":"Unknown column 'data_vencimento' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Agua.php
+            [line] => 36
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:38:24] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT * FROM semparar ORDER BY data DESC","error":"Unknown column 'data' in 'order clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Model.php
+            [line] => 82
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:39:34] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT * FROM semparar ORDER BY id DESC","error":"Unknown column 'id' in 'order clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Model.php
+            [line] => 82
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:39:41] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT * FROM semparar ORDER BY data DESC","error":"Unknown column 'data' in 'order clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Model.php
+            [line] => 82
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:40:50] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT * FROM semparar ORDER BY data DESC","error":"Unknown column 'data' in 'order clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Model.php
+            [line] => 82
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:42:08] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT * FROM semparar ORDER BY data DESC","error":"Unknown column 'data' in 'order clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Model.php
+            [line] => 82
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:46:18] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total FROM semparar WHERE YEAR(data_org) = YEAR(CURRENT_DATE()) AND MONTH(data_org) = MONTH(CURRENT_DATE()) AND status = 'pago'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Semparar.php
+            [line] => 24
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:46:48] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total FROM semparar WHERE YEAR(data_org) = YEAR(CURRENT_DATE()) AND MONTH(data_org) = MONTH(CURRENT_DATE()) AND status = 'pago'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Semparar.php
+            [line] => 24
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:47:38] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total FROM semparar WHERE YEAR(data_org) = YEAR(CURRENT_DATE()) AND MONTH(data_org) = MONTH(CURRENT_DATE()) AND status = 'pago'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Semparar.php
+            [line] => 24
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:47:45] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total FROM semparar WHERE YEAR(data_org) = YEAR(CURRENT_DATE()) AND MONTH(data_org) = MONTH(CURRENT_DATE()) AND status = 'pago'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Semparar.php
+            [line] => 24
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:48:17] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total FROM semparar WHERE YEAR(data_org) = YEAR(CURRENT_DATE()) AND MONTH(data_org) = MONTH(CURRENT_DATE()) AND status = 'pago'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Semparar.php
+            [line] => 24
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:48:20] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total FROM semparar WHERE YEAR(data_org) = YEAR(CURRENT_DATE()) AND MONTH(data_org) = MONTH(CURRENT_DATE()) AND status = 'pago'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Semparar.php
+            [line] => 24
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:48:24] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total FROM semparar WHERE YEAR(data_org) = YEAR(CURRENT_DATE()) AND MONTH(data_org) = MONTH(CURRENT_DATE()) AND status = 'pago'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Semparar.php
+            [line] => 24
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-02 18:49:00] [ERROR] [IP: ::1] [User: 1] Erro na execução da query {"query":"SELECT SUM(valor) as total FROM semparar WHERE YEAR(data_org) = YEAR(CURRENT_DATE()) AND MONTH(data_org) = MONTH(CURRENT_DATE()) AND status = 'pago'","error":"Unknown column 'status' in 'where clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 89
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Semparar.php
+            [line] => 24
+            [function] => query
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-05 18:51:21] [ERROR] [IP: ::1] [User: 1] Erro ao preparar query {"query":"INSERT INTO agua (data_vencimento, valor, consumo, local, observacoes, criado_por) VALUES (?, ?, ?, ?, ?, ?)","error":"Unknown column 'local' in 'field list'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 66
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Model.php
+            [line] => 19
+            [function] => prepare
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-05 18:56:37] [ERROR] [IP: ::1] [User: 1] Erro ao preparar query {"query":"INSERT INTO agua (data_vencimento, valor, consumo, local, observacoes, criado_por) VALUES (?, ?, ?, ?, ?, ?)","error":"Unknown column 'observacoes' in 'field list'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 66
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Model.php
+            [line] => 19
+            [function] => prepare
+            [class] => Database
+            [type] => ->
+        )
+
+)
+
+[2025-09-05 19:24:30] [ERROR] [IP: ::1] [User: 1] Erro ao preparar query {"query":"SELECT * FROM telefone ORDER BY id_telefone DESC","error":"Unknown column 'id_telefone' in 'order clause'"}
+Stack Trace:
+Array
+(
+    [0] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\includes\Database.php
+            [line] => 66
+            [function] => error
+            [class] => Logger
+            [type] => ->
+        )
+
+    [1] => Array
+        (
+            [file] => C:\wamp64\www\compras\src\models\Telefone.php
+            [line] => 33
+            [function] => prepare
+            [class] => Database
+            [type] => ->
+        )
+
+)
+

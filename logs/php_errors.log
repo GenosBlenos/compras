@@ -1,0 +1,748 @@
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:04:50 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:05:51 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP Stack trace:
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[30-Sep-2025 15:06:09 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:19:40 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:20:42 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:21:26 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 08:44:16 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 09:05:49 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:02:53 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:06:48 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP Warning:  Constant DB_HOST already defined in C:\wamp64\www\compras\src\includes\db_config.php on line 2
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   2. Database::getInstance() C:\wamp64\www\compras\public\processa_pdf.php:103
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   3. Database->__construct() C:\wamp64\www\compras\src\includes\Database.php:35
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   4. require_once() C:\wamp64\www\compras\src\includes\Database.php:12
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP Warning:  Constant DB_USER already defined in C:\wamp64\www\compras\src\includes\db_config.php on line 3
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   2. Database::getInstance() C:\wamp64\www\compras\public\processa_pdf.php:103
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   3. Database->__construct() C:\wamp64\www\compras\src\includes\Database.php:35
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   4. require_once() C:\wamp64\www\compras\src\includes\Database.php:12
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP Warning:  Constant DB_PASS already defined in C:\wamp64\www\compras\src\includes\db_config.php on line 4
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   2. Database::getInstance() C:\wamp64\www\compras\public\processa_pdf.php:103
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   3. Database->__construct() C:\wamp64\www\compras\src\includes\Database.php:35
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   4. require_once() C:\wamp64\www\compras\src\includes\Database.php:12
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP Warning:  Constant DB_NAME already defined in C:\wamp64\www\compras\src\includes\db_config.php on line 5
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   2. Database::getInstance() C:\wamp64\www\compras\public\processa_pdf.php:103
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   3. Database->__construct() C:\wamp64\www\compras\src\includes\Database.php:35
+[01-Oct-2025 10:06:51 America/Sao_Paulo] PHP   4. require_once() C:\wamp64\www\compras\src\includes\Database.php:12
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:10:54 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 10:11:01 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:20:14 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 11:21:30 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:11 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 15:17:58 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP Stack trace:
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[01-Oct-2025 16:22:38 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:07 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP Warning:  Constant DB_HOST already defined in C:\wamp64\www\compras\src\includes\db_config.php on line 2
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   2. Database::getInstance() C:\wamp64\www\compras\public\processa_pdf.php:103
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   3. Database->__construct() C:\wamp64\www\compras\src\includes\Database.php:35
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   4. require_once() C:\wamp64\www\compras\src\includes\Database.php:12
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP Warning:  Constant DB_USER already defined in C:\wamp64\www\compras\src\includes\db_config.php on line 3
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   2. Database::getInstance() C:\wamp64\www\compras\public\processa_pdf.php:103
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   3. Database->__construct() C:\wamp64\www\compras\src\includes\Database.php:35
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   4. require_once() C:\wamp64\www\compras\src\includes\Database.php:12
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP Warning:  Constant DB_PASS already defined in C:\wamp64\www\compras\src\includes\db_config.php on line 4
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   2. Database::getInstance() C:\wamp64\www\compras\public\processa_pdf.php:103
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   3. Database->__construct() C:\wamp64\www\compras\src\includes\Database.php:35
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   4. require_once() C:\wamp64\www\compras\src\includes\Database.php:12
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP Warning:  Constant DB_NAME already defined in C:\wamp64\www\compras\src\includes\db_config.php on line 5
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   2. Database::getInstance() C:\wamp64\www\compras\public\processa_pdf.php:103
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   3. Database->__construct() C:\wamp64\www\compras\src\includes\Database.php:35
+[02-Oct-2025 08:20:10 America/Sao_Paulo] PHP   4. require_once() C:\wamp64\www\compras\src\includes\Database.php:12
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 101
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\compras\src\includes\config.php:101
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 102
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\compras\src\includes\config.php:102
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 103
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   3. ini_set($option = 'session.cookie_samesite', $value = 'Strict') C:\wamp64\www\compras\src\includes\config.php:103
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 104
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   3. ini_set($option = 'session.gc_maxlifetime', $value = 1800) C:\wamp64\www\compras\src\includes\config.php:104
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 105
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\compras\src\includes\config.php:105
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 106
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\compras\src\includes\config.php:106
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\compras\src\includes\config.php on line 107
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP Stack trace:
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   1. {main}() C:\wamp64\www\compras\public\processa_pdf.php:0
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   2. require_once() C:\wamp64\www\compras\public\processa_pdf.php:4
+[02-Oct-2025 08:20:18 America/Sao_Paulo] PHP   3. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\compras\src\includes\config.php:107
