@@ -3,6 +3,7 @@ require_once __DIR__ . '/../src/includes/auth.php';
 require_once __DIR__ . '/../src/includes/helpers.php';
 
 $_GET['module'] = 'internet';
+require_once __DIR__ . '/../src/includes/header.php';
 require_once __DIR__ . '/../src/controllers/InternetController.php';
 
 $controller = new InternetController();
@@ -20,13 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $controller->destroy();
             break;
     }
+} else {
+    $pageTitle = 'Internet Predial';
+    $data = $controller->index();
+    extract($data);
+    require_once __DIR__ . '/../src/views/internet/index.php';
 }
-
-$pageTitle = 'Internet Predial';
-$data = $controller->index();
-extract($data);
-
-ob_start();
-require_once __DIR__ . '/../src/views/internet/index.php';
-$content = ob_get_clean();
-require_once __DIR__ . '/../src/includes/template.php';

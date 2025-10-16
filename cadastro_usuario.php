@@ -1,9 +1,9 @@
 <?php
 require_once __DIR__ . '/src/includes/auth.php';
 require_once __DIR__ . '/src/includes/header.php';
-require __DIR__ . '/app/conexao.php';
-
 $pageTitle = 'Cadastro de Usuário';
+
+require __DIR__ . '/app/conexao.php';
 
 $mensagem = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

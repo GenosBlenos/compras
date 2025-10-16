@@ -47,9 +47,9 @@ function sendLoginAttemptEmail($recipientEmail, $recipientName, $ipAddress, $att
         <html>
           <body style='font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; color: #333;'>
             <div style='max-width: 600px; margin: auto; background-color: #fff; border-radius: 8px; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1);'>
-              <div style='text-align: center; margin-bottom: 20px;'>
-                <img src='cid:logo_gordon' alt='Logotipo da Prefeitura' style='max-width: 150px;'/>
-              </div> 
+              <div style='text-align: center;'>
+                <img src='cid:gordon.jpg' alt='Logotipo da Biblioteca' style='max-width: 200px; border-radius: 10%;'/>
+              </div>
               <h2 style='color: #072a3a;'>Alerta de Tentativas de Login</h2>
               <p>Olá, <strong>{$recipientName}</strong>,</p>
               <p>Detectamos <strong>múltiplas tentativas de login falhas</strong> em sua conta da Biblioteca de Salto.</p>

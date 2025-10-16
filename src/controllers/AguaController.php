@@ -15,17 +15,17 @@ class AguaController extends BaseController {
     protected function getFields(): array {
         return [
             'mes' => null,
-            'unidade' => null,
-            'consumo_m3' => 0,
-            'valor_fatura' => 0,
+            'local' => null,
+            'consumo' => 0,
             'multa' => 0,
             'total' => 0,
-            'status' => 'pendente',
+            'Conta_status' => 'pendente',
+            'valor' => 0,
             'data_vencimento' => null,
             'secretaria' => null,
-            'tipo_consumo' => null,
-            'num_instalacao' => null,
-            'observacao' => null,
+            'classe_consumo' => null,
+            'instalacao' => null,
+            'observacoes' => null,
         ];
     }
 }

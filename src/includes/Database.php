@@ -1,8 +1,5 @@
 <?php
-// Garante que as constantes de configuração do banco de dados estejam definidas.
-require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/Logger.php';
-
 class Database {
     private static $instance = null;
     private $connection; // Will be a PDO object
@@ -12,6 +9,7 @@ class Database {
     private $lastQuery;
 
     private function __construct() {
+        require_once __DIR__ . '/db_config.php';
         $this->logger = Logger::getInstance();
         
         $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
@@ -23,21 +21,12 @@ class Database {
 
         try {
             $this->connection = new PDO($dsn, DB_USER, DB_PASS, $options);
-            
-            // Configurar charset
-            $this->connection->exec("SET NAMES utf8mb4");
-            $this->connection->exec("SET CHARACTER SET utf8mb4");
-            
-            // Configurar timezone
-            $this->connection->exec("SET time_zone = '+00:00'");
-            
         } catch (PDOException $e) {
             $this->logger->error('Erro de conexão com o banco de dados', [
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString()
             ]);
-            // Rethrow exception to allow callers to handle it and return proper JSON responses
-            throw $e;
+            die("Erro ao conectar ao banco de dados: " . $e->getMessage());
         }
     }
 

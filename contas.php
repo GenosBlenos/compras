@@ -5,43 +5,42 @@ $pageTitle = 'Contas';
 
 require_once __DIR__ . '/app/conexao.php'; // Garante que $pdo esteja disponível
 
-/**
- * Busca faturas do banco de dados com base em um filtro de módulo (categoria).
- *
- * @param PDO $pdo A instância da conexão PDO.
- * @param string $moduleFiltro O nome da categoria para filtrar (ex: 'agua', 'energia', 'todos').
- * @return array Um array de contas.
- */
 function getContasFromDatabase($pdo, $moduleFiltro = 'todos') {
-    // Consulta base que une faturas e categorias
-    $sql = "
-        SELECT 
-            f.id,
-            f.data_emissao,
-            f.data_vencimento,
-            f.valor_total AS valor,
-            f.observacoes,
-            f.arquivo_pdf,
-            c.nome AS modulo
-        FROM faturas f
-        JOIN categorias c ON f.categoria_id = c.id
-    ";
     
-    $params = [];
-    // Adiciona o filtro de categoria se não for 'todos'
-    if ($moduleFiltro !== 'todos') {
-        $sql .= " WHERE c.nome = :moduleFiltro";
-        $params[':moduleFiltro'] = $moduleFiltro;
+    $modulos = [
+        'agua' => 'SELECT *, "agua" as modulo FROM agua',
+        'energia' => 'SELECT *, "energia" as modulo FROM energia',
+        'internet' => 'SELECT *, "internet" as modulo FROM internet',
+        'semparar' => 'SELECT *, "semparar" as modulo FROM semparar',
+        'telefone' => 'SELECT *, "telefone" as modulo FROM telefone',
+    ];
+
+    $todasAsContas = [];
+
+    // Se um módulo específico for selecionado, busca apenas dele.
+    if ($moduleFiltro !== 'todos' && isset($modulos[$moduleFiltro])) {
+        try {
+            $stmt = $pdo->query($modulos[$moduleFiltro]);
+            $todasAsContas = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            error_log("Erro ao buscar contas do módulo '{$moduleFiltro}': " . $e->getMessage());
+        }
+    } else { // Se "todos" for selecionado, busca de todos os módulos.
+        foreach ($modulos as $nomeModulo => $query) {
+            try {
+                // Colunas comuns para o relatório geral. Adicionamos as novas colunas de energia com COALESCE para preencher com NULL em outros módulos.
+                $common_query = 'SELECT "'. $nomeModulo .'" as modulo, observacoes, valor, Conta_status, data_vencimento, local, secretaria, instalacao, consumo, IF(TABLE_NAME = \'energia\', pacote_contratado_kwh, NULL) as pacote_contratado_kwh FROM ' . $nomeModulo;
+                $stmt = $pdo->query($common_query);
+                $contas = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                $todasAsContas = array_merge($todasAsContas, $contas);
+            } catch (PDOException $e) {
+                // Ignora erros se uma tabela ou coluna não existir em um dos módulos
+                error_log("Erro ao buscar contas do módulo '{$nomeModulo}' para relatório geral: " . $e->getMessage());
+            }
+        }
     }
 
-    try {
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute($params);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    } catch (PDOException $e) {
-        error_log("Erro ao buscar contas do banco de dados: " . $e->getMessage());
-        return []; // Retorna um array vazio em caso de erro
-    }
+    return $todasAsContas;
 }
 
 /**

@@ -1,31 +1,14 @@
 <?php
 require_once __DIR__ . '/Database.php';
-require_once __DIR__ . '/Logger.php';
-
 abstract class Model {
     protected $pdo;
     protected $table;
     protected $fillable = [];
     protected $orderBy = 'id'; // coluna padrão para ordenação
-    protected $logger;
 
     public function __construct() {
-        try {
-            // Get the PDO connection from our Database wrapper class
-            $this->pdo = Database::getInstance()->getConnection();
-            $this->logger = Logger::getInstance();
-            
-            if (!$this->pdo) {
-                throw new Exception("Não foi possível estabelecer conexão com o banco de dados");
-            }
-        } catch (Exception $e) {
-            if (isset($this->logger)) {
-                $this->logger->error("Erro ao instanciar Model: " . $e->getMessage());
-            } else {
-                error_log("Erro ao instanciar Model: " . $e->getMessage());
-            }
-            throw $e;
-        }
+        // Get the PDO connection from our Database wrapper class
+        $this->pdo = Database::getInstance()->getConnection();
     }
 
     public function create(array $data) {

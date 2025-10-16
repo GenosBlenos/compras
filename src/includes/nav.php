@@ -1,5 +1,4 @@
 <?php
-
 $script_name = basename($_SERVER['SCRIPT_NAME'], '.php');
 // Usamos $_GET['module'] diretamente, pois ele pode ser definido programaticamente
 // dentro de um script (ex: internet.php), o que filter_input(INPUT_GET,...) não captura.
@@ -14,23 +13,18 @@ $modulos = [
     'internet' => ['label' => 'Internet Predial', 'href' => 'internet.php', 'id' => 'internet'],
 ];
 
-// Define os itens do menu com seus links. Tornamos o menu robusto caso
-// $module_param não exista (ex.: header incluído antes de definir $_GET['module']).
+// Define os itens do menu com seus links
 $menu_items = [];
-$effective_module = $module_param ?: $script_name;
 if ($module_param && isset($modulos[$module_param])) {
-    // Módulo principal (exibe o nome do módulo no menu)
-    $menu_items[] = $modulos[$module_param];
+    $menu_items[] = $modulos[$module_param]; // Adiciona o link do módulo principal
+    $menu_items = [
+        ["label" => "Faturas", "href" => "faturas.php?module=$module_param", "id" => "faturas"],
+        ["label" => "Unidades", "href" => "unidades.php?module=$module_param", "id" => "unidades"],
+        ["label" => "KPIs", "href" => "kpis.php?module=$module_param", "id" => "kpis"],
+        ["label" => "Documentos", "href" => "documentos.php?module=$module_param", "id" => "documentos"],
+        ["label" => "Configurações", "href" => "configuracoes.php?module=$module_param", "id" => "configuracoes"],
+    ];
 }
-
-// Items padrão do submenu (sempre gerados usando o módulo efetivo)
-$menu_items = array_merge($menu_items, [
-    ["label" => "Faturas", "href" => "faturas.php?module={$effective_module}", "id" => "faturas"],
-    ["label" => "Unidades", "href" => "unidades.php?module={$effective_module}", "id" => "unidades"],
-    ["label" => "KPIs", "href" => "kpis.php?module={$effective_module}", "id" => "kpis"],
-    ["label" => "Documentos", "href" => "documentos.php?module={$effective_module}", "id" => "documentos"],
-    ["label" => "Configurações", "href" => "configuracoes.php?module={$effective_module}", "id" => "configuracoes"],
-]);
 
 // O módulo "real" pode vir do parâmetro GET ou do nome do script.
 $current_page_for_menu = $module_param ?: $script_name;

@@ -2,14 +2,19 @@ import os
 import re
 import logging
 import fitz  # PyMuPDF
-import pdfplumber
+import pypdf
 import easyocr
 import numpy as np
 from PIL import Image
 import cv2
+import pytesseract
+from pdf2image import convert_from_path
 
 # --- Configuração ---
 logger = logging.getLogger(__name__)
+# Adicione o caminho para o executável do Tesseract se não estiver no PATH do sistema
+# Exemplo para Windows: 
+# pytesseract.pytesseract.tesseract_cmd = r'C:\ Program Files\Tesseract-OCR\tesseract.exe'
 
 # --- Inicialização de Leitores (Singleton) ---
 EASYOCR_READER = None
@@ -50,75 +55,69 @@ def _run_easyocr(image: np.ndarray, filename: str) -> str:
         logger.error(f"[{filename}] Falha ao executar EasyOCR: {e}")
         return ""
 
+def _run_tesseract(image: np.ndarray, filename: str) -> str:
+    """Executa o Tesseract em uma imagem pré-processada."""
+    try:
+        # lang='por' para português
+        return pytesseract.image_to_string(image, lang='por').strip()
+    except pytesseract.TesseractNotFoundError:
+        logger.error(f"[{filename}] Executável do Tesseract não encontrado. Verifique a instalação e o PATH.")
+        return ""
+    except Exception as e:
+        logger.error(f"[{filename}] Falha ao executar Tesseract: {e}")
+        return ""
+
 def extract_text_from_pdf(pdf_path: str, use_ocr=True) -> str:
-    """
-    Extrai texto de um PDF usando uma abordagem em camadas:
-    1. Tenta extrair texto nativo com pdfplumber (ótimo para layouts complexos).
-    2. Tenta extrair texto nativo com PyMuPDF (rápido e eficiente).
-    3. Se nenhum texto nativo for encontrado, recorre ao OCR usando PyMuPDF e EasyOCR.
-    """
+    """Extrai texto de um PDF usando múltiplos métodos, incluindo OCR avançado."""
     filename = os.path.basename(pdf_path)
-    full_text = ''
-
-    # --- Camada 1: Extração de texto nativo com pdfplumber ---
+    
+    # 1. Extração de texto nativo (PyMuPDF)
     try:
-        logger.debug(f"[{filename}] Tentando extração de texto nativo com pdfplumber.")
-        with pdfplumber.open(pdf_path, password='') as pdf:
-            pages = [page.extract_text() for page in pdf.pages if page.extract_text()]
-            full_text = " ".join(pages)
-        full_text = re.sub(r'\s+', ' ', full_text).strip()
-        if len(full_text) > 50:
-            logger.info(f"[{filename}] Texto extraído com sucesso via pdfplumber.")
-            return full_text
-        logger.warning(f"[{filename}] pdfplumber extraiu texto mínimo.")
-    except Exception as e: # pdfplumber pode falhar em PDFs criptografados ou malformados
-        logger.warning(f"[{filename}] pdfplumber falhou: {e}. Tentando próximo método.")
-
-    # --- Camada 2: Extração de texto nativo com PyMuPDF ---
-    try:
-        logger.debug(f"[{filename}] Tentando extração de texto nativo com PyMuPDF (fitz).")
+        logger.debug(f"[{filename}] Tentando extração de texto nativo com PyMuPDF.")
         with fitz.open(pdf_path) as doc:
             full_text = " ".join(page.get_text("text", sort=True) for page in doc)
         full_text = re.sub(r'\s+', ' ', full_text).strip()
-        if len(full_text) > 50:
+        if len(full_text) > 50: # Um limiar para considerar o texto válido
             logger.info(f"[{filename}] Texto extraído com sucesso via PyMuPDF.")
             return full_text
-        logger.warning(f"[{filename}] PyMuPDF também extraiu texto mínimo. Prosseguindo para OCR se ativado.")
+        logger.warning(f"[{filename}] PyMuPDF extraiu texto mínimo. Prosseguindo para OCR.")
     except Exception as e:
-        logger.warning(f"[{filename}] PyMuPDF falhou: {e}. Prosseguindo para OCR se ativado.")
+        logger.warning(f"[{filename}] PyMuPDF falhou: {e}. Prosseguindo para OCR.")
 
-    # --- Camada 3: Extração via OCR (se habilitado e necessário) ---
     if not use_ocr:
-        logger.info(f"[{filename}] Extração por OCR desabilitada. Nenhum texto extraído.")
+        logger.info(f"[{filename}] Extração por OCR desabilitada.")
         return ""
-    
-    logger.info(f"[{filename}] Nenhuma extração de texto nativo bem-sucedida. Iniciando pipeline de OCR com PyMuPDF e EasyOCR.")
-    initialize_easyocr_reader()
 
+    # 2. Extração via OCR (com pré-processamento e múltiplos motores)
+    logger.info(f"[{filename}] Iniciando pipeline de OCR.")
+    initialize_easyocr_reader() # Garante que o EasyOCR esteja pronto
+    
     final_text_parts = []
     try:
-        with fitz.open(pdf_path) as doc:
-            for i, page in enumerate(doc):
-                page_num = i + 1
-                logger.debug(f"[{filename}] Processando OCR da página {page_num}/{len(doc)}.")
-                
-                # Renderiza a página como uma imagem usando PyMuPDF
-                pix = page.get_pixmap(dpi=300)
-                image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-                
-                processed_image = _preprocess_image_for_ocr(image)
-                
-                # Executa o EasyOCR
-                ocr_text = _run_easyocr(processed_image, filename)
-                if ocr_text:
-                    logger.info(f"[{filename}] Página {page_num}: EasyOCR extraiu texto.")
-                    final_text_parts.append(ocr_text)
-                else:
-                    logger.warning(f"[{filename}] Página {page_num}: EasyOCR não retornou texto.")
-
+        images = convert_from_path(pdf_path, dpi=300)
     except Exception as e:
-        logger.error(f"[{filename}] Falha no pipeline de OCR com PyMuPDF/EasyOCR: {e}")
-        return ""
+        logger.error(f"[{filename}] Falha ao converter PDF para imagem com pdf2image: {e}")
+        return "" # Retorna vazio se a conversão falhar
+
+    for i, image in enumerate(images):
+        page_num = i + 1
+        logger.debug(f"[{filename}] Processando OCR da página {page_num}/{len(images)}.")
+        
+        processed_image = _preprocess_image_for_ocr(image)
+        
+        # Tentativa 1: EasyOCR
+        easyocr_text = _run_easyocr(processed_image, filename)
+        
+        # Tentativa 2: Tesseract (como fallback)
+        tesseract_text = _run_tesseract(processed_image, filename)
+        
+        # Escolhe o melhor resultado (o que tiver mais texto)
+        if len(easyocr_text) > len(tesseract_text):
+            logger.info(f"[{filename}] Página {page_num}: EasyOCR produziu o melhor resultado.")
+            final_text_parts.append(easyocr_text)
+        else:
+            logger.info(f"[{filename}] Página {page_num}: Tesseract produziu o melhor resultado.")
+            final_text_parts.append(tesseract_text)
             
     full_text = "\n".join(final_text_parts).strip()
 

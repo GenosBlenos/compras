@@ -1,7 +1,6 @@
 <?php
 ob_start();
-
-// Exibir mensagens de sucesso ou erro da sessão
+// Mensagens de sucesso/erro
 if (isset($_SESSION['success'])) {
     echo '<div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">' . htmlspecialchars($_SESSION['success']) . '</div>';
     unset($_SESSION['success']);
@@ -19,16 +18,14 @@ if (isset($_SESSION['error'])) {
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500 border-b-2 border-gray-300">
             <h3 class="text-lg font-semibold text-gray-800 border-b border-gray-300 pb-2 mb-2">Média de Consumo</h3>
-            <p class="text-2xl font-bold text-green-600"><?php echo number_format($mediaConsumo ?? 0, 2); ?> min</p>
+            <p class="text-2xl font-bold text-green-600"><?php echo htmlspecialchars($mediaConsumo ?? '0'); ?> min</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500 border-b-2 border-gray-300">
-            <h3 class="text-lg font-semibold text-gray-800 border-b border-gray-300 pb-2 mb-2">Últimos 6 Meses</h3>
-            <div id="consumoChart" class="h-20"></div>
+            <h3 class="text-lg font-semibold text-gray-800 border-b border-gray-300 pb-2 mb-2">Total Anual (Pago)</h3>
+            <p class="text-2xl font-bold text-purple-600 text-center mt-2">R$ <?php echo number_format($totalAnual ?? 0, 2, ',', '.'); ?></p>
         </div>
     </div>
-    <form action="index.php?page=telefone" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow-lg">
-        <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(gerarCSRFToken()); ?>">
-        <input type="hidden" name="action" value="store">
+    <form action="" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow-lg">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div>
                 <label for="numero" class="block text-sm font-medium text-gray-700">Número</label>
@@ -98,11 +95,10 @@ if (isset($_SESSION['error'])) {
         if (confirm('Tem certeza que deseja excluir este registro?')) {
             const form = document.createElement('form');
             form.method = 'POST';
-            form.action = 'index.php?page=telefone';
+            form.action = 'telefone.php';
             form.innerHTML = `
-                <input type="hidden" name="action" value="destroy">
                 <input type="hidden" name="id" value="${id}">
-                <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(gerarCSRFToken()); ?>">
+                <input type="hidden" name="excluir" value="1">
             `;
             document.body.appendChild(form);
             form.submit();

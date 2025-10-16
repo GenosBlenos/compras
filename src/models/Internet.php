@@ -4,155 +4,61 @@ require_once __DIR__ . '/../includes/Model.php';
 class Internet extends Model
 {
     protected $table = 'internet';
-    protected $orderBy = 'id_internet';
-    protected $fillable = [
-        'mes',
-        'unidade',
-        'valor_fatura',
-        'multa',
-        'total',
-        'status',
-        'data_vencimento',
-        'secretaria',
-        'tipo_plano',
-        'velocidade',
-        'ip_fixo',
-        'num_contrato',
-        'observacao',
-        'criado_por',
-        'atualizado_por'
-    ];
+    protected $fillable = ['secretaria', 'provedor', 'instalacao', 'data_vencimento', 'valor', 'Conta_status', 'velocidade'];
 
     // create, update, delete, find are inherited from Model
 
-    public function buscarComFiltros($filtros = []) {
-        try {
-            $where = [];
-            $params = [];
-            
-            if (!empty($filtros['secretaria'])) {
-                $where[] = 'secretaria LIKE ?';
-                $params[] = '%' . $filtros['secretaria'] . '%';
-            }
-            
-            if (!empty($filtros['tipo_plano'])) {
-                $where[] = 'tipo_plano LIKE ?';
-                $params[] = '%' . $filtros['tipo_plano'] . '%';
-            }
-            
-            if (!empty($filtros['num_contrato'])) {
-                $where[] = 'num_contrato LIKE ?';
-                $params[] = '%' . $filtros['num_contrato'] . '%';
-            }
-            
-            if (!empty($filtros['data_vencimento'])) {
-                $where[] = 'data_vencimento = ?';
-                $params[] = $filtros['data_vencimento'];
-            }
+    public function buscarComFiltros(array $filtros): array
+    {
+        $sql = "SELECT * FROM {$this->table}";
+        $where = [];
+        $params = [];
 
-            $sql = "SELECT * FROM {$this->table}";
-            if ($where) {
-                $sql .= " WHERE " . implode(' AND ', $where);
-            }
-            $sql .= " ORDER BY {$this->orderBy} DESC";
-            
-            $stmt = $this->pdo->prepare($sql);
-            if ($stmt) {
-                $stmt->execute($params);
-                return $stmt->fetchAll(PDO::FETCH_ASSOC);
-            }
-            return [];
-        } catch (Exception $e) {
-            $this->logger->error("Erro ao buscar registros com filtros", [
-                'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString()
-            ]);
-            return [];
+        if (!empty($filtros['secretaria'])) {
+            $where[] = "secretaria LIKE :secretaria";
+            $params['secretaria'] = '%' . $filtros['secretaria'] . '%';
         }
+        if (!empty($filtros['provedor'])) {
+            $where[] = "provedor LIKE :provedor";
+            $params['provedor'] = '%' . $filtros['provedor'] . '%';
+        }
+        if (!empty($filtros['instalacao'])) {
+            $where[] = "instalacao LIKE :instalacao";
+            $params['instalacao'] = '%' . $filtros['instalacao'] . '%';
+        }
+
+        if (!empty($where)) {
+            $sql .= " WHERE " . implode(' AND ', $where);
+        }
+
+        $sql .= " ORDER BY data_vencimento DESC";
+
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute($params);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function getConsumoMensal() {
-        try {
-            $sql = "SELECT
-                        DATE_FORMAT(data_vencimento, '%Y-%m') as mes,
-                        velocidade,
-                        SUM(valor_fatura) as total_valor
-                    FROM {$this->table}
-                    GROUP BY mes, velocidade
-                    ORDER BY mes DESC
-                    LIMIT 12";
+    public function getStats(): array
+    {
+        $stats = [];
+        $stmt = $this->pdo->prepare("SELECT SUM(valor) as total FROM {$this->table} WHERE Conta_status = 'pendente'");
+        $stmt->execute();
+        $stats['totalPendente'] = $stmt->fetchColumn() ?: 0;
+        
+        $sqlMedia = "SELECT ROUND(AVG(
+            CASE
+                WHEN velocidade LIKE '%Gbps%' OR velocidade LIKE '%Giga%' THEN CAST(velocidade AS UNSIGNED) * 1000
+                ELSE CAST(velocidade AS UNSIGNED)
+            END
+        )) as media_velocidade FROM {$this->table}";
+        $stmt = $this->pdo->prepare($sqlMedia);
+        $stmt->execute();
+        $stats['mediaVelocidade'] = $stmt->fetchColumn() ?: 0;
 
-            $stmt = $this->pdo->query($sql);
-            return $stmt ? $stmt->fetchAll(PDO::FETCH_ASSOC) : [];
-        } catch (Exception $e) {
-            $this->logger->error("Erro ao buscar consumo mensal", [
-                'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString()
-            ]);
-            return [];
-        }
-    }
+        $stmt = $this->pdo->prepare("SELECT DATE_FORMAT(data_vencimento, '%Y-%m') as mes_ano, SUM(valor) as valor_total FROM {$this->table} WHERE data_vencimento >= DATE_SUB(CURDATE(), INTERVAL 6 MONTH) GROUP BY mes_ano ORDER BY mes_ano ASC");
+        $stmt->execute();
+        $stats['valorMensal'] = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    public function getMediaVelocidade() {
-        try {
-            $sql = "SELECT AVG(
-                        CASE 
-                            WHEN velocidade LIKE '%Gbps%' OR velocidade LIKE '%Giga%' 
-                            THEN CAST(REPLACE(REPLACE(velocidade, 'Gbps', ''), 'Giga', '') AS DECIMAL(10,2)) * 1000
-                            WHEN velocidade LIKE '%Mbps%' OR velocidade LIKE '%Mega%'
-                            THEN CAST(REPLACE(REPLACE(velocidade, 'Mbps', ''), 'Mega', '') AS DECIMAL(10,2))
-                            ELSE 0
-                        END
-                    ) as media_velocidade
-                    FROM {$this->table}
-                    WHERE data_vencimento >= DATE_SUB(CURRENT_DATE, INTERVAL 6 MONTH)";
-
-            $stmt = $this->pdo->query($sql);
-            $result = $stmt ? $stmt->fetch(PDO::FETCH_ASSOC) : null;
-            return $result ? $result['media_velocidade'] : 0;
-        } catch (Exception $e) {
-            $this->logger->error("Erro ao calcular média de velocidade", [
-                'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString()
-            ]);
-            return 0;
-        }
-    }
-
-    public function getTotalPendente() {
-        try {
-            $sql = "SELECT SUM(valor_fatura) as total 
-                    FROM {$this->table} 
-                    WHERE status = 'pendente'";
-                    
-            $stmt = $this->pdo->query($sql);
-            $result = $stmt ? $stmt->fetch(PDO::FETCH_ASSOC) : null;
-            return $result ? $result['total'] : 0;
-        } catch (Exception $e) {
-            $this->logger->error("Erro ao calcular total pendente", [
-                'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString()
-            ]);
-            return 0;
-        }
-    }
-
-    public function getTotalAnual() {
-        try {
-            $sql = "SELECT SUM(valor_fatura) as total 
-                    FROM {$this->table} 
-                    WHERE YEAR(data_vencimento) = YEAR(CURRENT_DATE())
-                    AND status = 'pago'";
-            
-            $stmt = $this->pdo->query($sql);
-            $result = $stmt ? $stmt->fetch(PDO::FETCH_ASSOC) : null;
-            return $result ? $result['total'] : 0;
-        } catch (Exception $e) {
-            $this->logger->error("Erro ao calcular total anual", [
-                'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString()
-            ]);
-            return 0;
-        }
+        return $stats;
     }
 }

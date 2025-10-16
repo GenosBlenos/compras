@@ -7,14 +7,112 @@ from sklearn.metrics import classification_report, accuracy_score, confusion_mat
 import joblib
 import os
 import logging
-
-# Importações centralizadas para consistência
-from pdf_processor import extract_text_from_pdf, initialize_easyocr_reader
+import re
+import pypdf
+import fitz  # PyMuPDF
+import easyocr
+from PIL import Image, ImageEnhance, ImageFilter
+import cv2
 from preprocessing import unified_preprocess_text
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
+# --- OCR Reader ---
+reader_ocr = None
+
+def initialize_ocr_reader():
+    """Inicializa o leitor OCR (EasyOCR) se ainda não foi inicializado."""
+    global reader_ocr
+    if reader_ocr is None:
+        try:
+            logger.info("Inicializando o leitor OCR (EasyOCR)...")
+            reader_ocr = easyocr.Reader(['pt', 'en'], gpu=False)
+            logger.info("Leitor OCR carregado com sucesso.")
+        except Exception as e:
+            logger.warning(f"AVISO: Não foi possível inicializar o leitor OCR (EasyOCR): {e}")
+
+def preprocess_image_for_ocr(image: Image.Image) -> Image.Image:
+    """Aplica pré-processamento a uma imagem para melhorar a qualidade do OCR."""
+    
+    # Converte para numpy array para uso com OpenCV
+    img_np = np.array(image.convert('RGB'))
+    
+    # 1. Converte para escala de cinza
+    gray = cv2.cvtColor(img_np, cv2.COLOR_RGB2GRAY)
+    
+    # 2. Redução de ruído com filtro bilateral, que preserva bordas
+    denoised = cv2.bilateralFilter(gray, 9, 75, 75)
+    
+    # 3. Binarização com limiar adaptativo para lidar com diferentes iluminações
+    # O valor 255 é o valor máximo a ser atribuído, ADAPTIVE_THRESH_GAUSSIAN_C é o método de limiarização,
+    # THRESH_BINARY é o tipo de limiar, 11 é o tamanho da vizinhança, 2 é a constante C subtraída da média.
+    binary_img = cv2.adaptiveThreshold(denoised, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, 
+                                       cv2.THRESH_BINARY, 11, 2)
+
+    return Image.fromarray(binary_img)
+
+def extract_text_from_pdf(pdf_path: str) -> str:
+    """Extrai texto de um arquivo PDF usando PyMuPDF, pypdf e OCR como fallback com pré-processamento."""
+    full_text = ""
+    try:
+        # 1. Tenta com PyMuPDF (fitz)
+        doc = fitz.open(pdf_path)
+        for page in doc:
+            full_text += page.get_text("text", sort=True) + "\n"
+        doc.close()
+        full_text = re.sub(r'\s+', ' ', full_text.strip())
+        if len(full_text.strip()) > 50: # Verifica se o texto extraído é minimamente substancial
+            logger.info(f"Texto extraído com sucesso de {os.path.basename(pdf_path)} usando PyMuPDF.")
+            return full_text
+        
+        # 2. Fallback para pypdf
+        logger.warning(f"PyMuPDF extraiu texto mínimo de {os.path.basename(pdf_path)}. Tentando pypdf.")
+        reader = pypdf.PdfReader(pdf_path)
+        full_text = ""
+        for page in reader.pages:
+            page_text = page.extract_text()
+            if page_text:
+                full_text += page_text + "\n"
+        full_text = re.sub(r'\s+', ' ', full_text.strip())
+        if len(full_text.strip()) > 50:
+            logger.info(f"Texto extraído com sucesso de {os.path.basename(pdf_path)} usando pypdf.")
+            return full_text
+
+        # 3. Fallback para OCR com pré-processamento
+        logger.warning(f"pypdf também extraiu texto mínimo de {os.path.basename(pdf_path)}. Tentando OCR com pré-processamento.")
+        if reader_ocr is None:
+            logger.error("Leitor OCR não está disponível para fallback.")
+            return ""
+            
+        doc = fitz.open(pdf_path)
+        ocr_text = ""
+        for page_num in range(len(doc)):
+            page = doc.load_page(page_num)
+            pix = page.get_pixmap(dpi=300) # Aumenta a resolução para melhor qualidade do OCR
+            img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+            
+            # Aplica o pré-processamento na imagem
+            processed_img = preprocess_image_for_ocr(img)
+            
+            # Extrai texto da imagem processada
+            result = reader_ocr.readtext(np.array(processed_img), detail=0, paragraph=True)
+            
+            if result:
+                ocr_text += " ".join(result) + "\n"
+        doc.close()
+        
+        if ocr_text.strip():
+            logger.info(f"Texto extraído com sucesso de {os.path.basename(pdf_path)} usando OCR.")
+        else:
+            logger.warning(f"OCR não conseguiu extrair texto de {os.path.basename(pdf_path)}.")
+
+        return ocr_text.strip()
+
+    except Exception as e:
+        logger.error(f"Falha ao processar o PDF {os.path.basename(pdf_path)}: {e}", exc_info=True)
+        return ""
 
 def build_dataset_from_pdfs(base_dir):
     """Constrói um DataFrame a partir de PDFs na pasta training_data."""
@@ -33,7 +131,7 @@ def build_dataset_from_pdfs(base_dir):
         for filename in os.listdir(category_path):
             if filename.lower().endswith('.pdf'):
                 pdf_path = os.path.join(category_path, filename)
-                # Usa a função de extração centralizada para consistência
+                logger.info(f"  - Extraindo texto de: {filename}")
                 text = extract_text_from_pdf(pdf_path)
                 if text:
                     data.append({'text': text, 'category': category})
@@ -179,7 +277,7 @@ def main():
     base_dir = os.path.dirname(__file__)
     
     # Inicializa o OCR
-    initialize_easyocr_reader()
+    initialize_ocr_reader()
 
     # 1. Constrói o dataset a partir dos PDFs
     df = build_dataset_from_pdfs(base_dir)

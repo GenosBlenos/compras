@@ -1,13 +1,10 @@
 <?php
-session_start();
 require_once __DIR__ . '/../src/includes/auth.php';
 require_once __DIR__ . '/../src/includes/helpers.php';
-require_once __DIR__ . '/../src/controllers/AguaController.php';
-// Define variáveis globais necessárias
-$pageTitle = 'Água Predial';
-$_GET['module'] = 'agua';
 
+$_GET['module'] = 'agua'; // Define o módulo ANTES de incluir o header
 require_once __DIR__ . '/../src/includes/header.php';
+require_once __DIR__ . '/../src/controllers/AguaController.php';
 
 $controller = new AguaController();
 
